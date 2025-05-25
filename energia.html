@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos-Estabilizador e Nobreaks</title>
+    <link rel="icon" href="https://i.imgur.com/mO9KyLc.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B63E5',
+                        secondary: '#00CCFF',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        tech: ['Orbitron', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .tech-gradient {
+            background: linear-gradient(90deg, #0a2540, #0062cc);
+        }
+        .logo-text {
+            background: linear-gradient(90deg, #0062cc, #00d2ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: linear-gradient(90deg, #0062cc, #00d2ff);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #0a2540, #0062cc);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #0062cc, #00d2ff);
+            transform: translateY(-2px);
+        }
+        .tech-icon path {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: dash 2s linear forwards;
+        }
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        .card-gradient {
+            background: linear-gradient(135deg, #0a2540 0%, #1e3a5f 100%);
+        }
+        .cyan-glow {
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+        }
+        .dark-section {
+            background-color: #1a202c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="bg-gray-800 p-2 rounded-lg mr-2">
+                        <svg class="w-10 h-10 tech-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3L4 7.5V16.5L12 21L20 16.5V7.5L12 3Z" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L4 7.5" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12V21" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L20 7.5" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="tech-font text-2xl font-bold tracking-wider">
+                            <span class="text-white">Tekin</span><span class="text-cyan-400">formática</span>
+                        </h1>
+                        <p class="text-gray-500 text-sm">Soluções em Tecnologia da Informação</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-cyan-400 transition duration-300">Início</a>
+                    <a href="servicos.html" class="nav-link text-white hover:text-cyan-400 transition duration-300">Serviços</a>
+                    <a href="produtos.html" class="nav-link text-white hover:text-cyan-400 transition duration-300">Produtos</a>
+                    <a href="contato.html" class="nav-link text-white hover:text-cyan-400 transition duration-300">Contato</a>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="tech-gradient text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-4xl font-bold mb-4 font-tech">Proteção para seus <span class="text-cyan-400">equipamentos</span></h2>
+                    <p class="text-lg mb-6">Estabilizadores e Nobreaks de alta qualidade para garantir a segurança dos seus dispositivos eletrônicos.</p>
+                    <div class="flex space-x-4">
+                        <a href="#produtos" class="btn-primary px-6 py-3 rounded-lg font-medium">Ver Produtos</a>
+                        <a href="contato.html" class="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-gray-800 transition duration-300">Fale Conosco</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-cyan-400 rounded-full opacity-20 blur-xl"></div>
+                        <svg class="w-64 h-64 relative z-10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#00CCFF" d="M40,120 L40,50 L160,50 L160,120 L40,120 Z" opacity="0.2"></path>
+                            <path fill="#FFFFFF" d="M50,110 L50,60 L150,60 L150,110 L50,110 Z"></path>
+                            <path fill="#00CCFF" d="M60,100 L60,70 L140,70 L140,100 L60,100 Z"></path>
+                            <path fill="#FFFFFF" d="M70,90 L70,80 L130,80 L130,90 L70,90 Z"></path>
+                            <path fill="#00CCFF" d="M90,140 L90,120 L110,120 L110,140 L90,140 Z"></path>
+                            <path fill="#FFFFFF" d="M70,150 L70,140 L130,140 L130,150 L70,150 Z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 font-tech">Produtos em <span class="text-cyan-500">Destaque</span></h2>
+                <p class="text-gray-600 mt-2">Conheça nossa linha de produtos para proteção de equipamentos</p>
+                <div class="w-24 h-1 bg-cyan-400 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product 1 -->
+            <div class="product-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="relative">
+                    <img src="https://i.imgur.com/yY5eFU0.png" alt="Filtro de Linha ZNDA" class="w-full h-64 object-contain bg-gray-50 p-4">
+                    <div class="price-tag absolute top-4 right-0 bg-blue-600 text-white px-4 py-2 font-bold">
+                        R$ 45,00
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Filtro de Linha ZNDA</h2>
+                    <p class="text-gray-600 font-medium mb-2">6 Tomadas - Bivolt</p>
+                    <p class="text-gray-700 text-sm mb-4">Os Filtros de Linha ZNDA são feitos com componentes de excelente qualidade e são ideais para proteger seus equipamentos eletroeletrônicos em geral, pois atenuam surtos provenientes de raios e distúrbios que possam se propagar pela rede elétrica.</p>
+                    
+                    <div class="space-y-3 mt-6">
+                        <div class="bg-blue-50 p-3 rounded-lg">
+                            <p class="text-blue-800 font-medium">Pagamento em 2x sem juros:</p>
+                            <p class="text-blue-900 text-xl font-bold">R$ 45,00</p>
+                        </div>
+                        <div class="bg-green-50 p-3 rounded-lg">
+                            <p class="text-green-800 font-medium">Pagamento via PIX ou Dinheiro:</p>
+                            <p class="text-green-900 text-xl font-bold">R$ 42,00</p>
+                            <p class="text-green-700 text-xs mt-1">Economize R$ 3,00</p>
+                        </div>
+                    </div>
+                    
+                    <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        Comprar Agora
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="relative">
+                    <img src="https://i.imgur.com/JPUgIbj.png" alt="Estabilizador Force Line" class="w-full h-64 object-contain bg-gray-50 p-4">
+                    <div class="price-tag absolute top-4 right-0 bg-blue-600 text-white px-4 py-2 font-bold">
+                        R$ 140,00
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Estabilizador Force Line 300VA</h2>
+                    <p class="text-gray-600 font-medium mb-2">Monovolt 127V</p>
+                    <p class="text-gray-700 text-sm mb-4">Estabilizador compacto, fácil de instalar, design moderno e arrojado, não introduz distorção harmônica, maior faixa de estabilização: 45%, plugue e tomadas nova norma - NBR14136, gabinete em plástico ABS muito resistente.</p>
+                    
+                    <div class="space-y-3 mt-6">
+                        <div class="bg-blue-50 p-3 rounded-lg">
+                            <p class="text-blue-800 font-medium">Pagamento em 2x sem juros:</p>
+                            <p class="text-blue-900 text-xl font-bold">R$ 140,00</p>
+                        </div>
+                        <div class="bg-green-50 p-3 rounded-lg">
+                            <p class="text-green-800 font-medium">Pagamento via PIX ou Dinheiro:</p>
+                            <p class="text-green-900 text-xl font-bold">R$ 130,00</p>
+                            <p class="text-green-700 text-xs mt-1">Economize R$ 10,00</p>
+                        </div>
+                    </div>
+                    
+                    <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        Comprar Agora
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="relative">
+                    <img src="https://i.imgur.com/Oc0HbdO.png" alt="Nobreak JBR" class="w-full h-64 object-contain bg-gray-50 p-4">
+                    <div class="price-tag absolute top-4 right-0 bg-blue-600 text-white px-4 py-2 font-bold">
+                        R$ 460,00
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Nobreak JBR 600VA</h2>
+                    <p class="text-gray-600 font-medium mb-2">Monovolt 127V</p>
+                    <p class="text-gray-700 text-sm mb-4">Esse Nobreak funciona como uma proteção em caso de queda de energia ou surtos de tensão evitando assim a queima dos equipamentos além de manter o funcionamento mesmo com a queda de energia devido á bateria interna que já acompanha o produto.</p>
+                    
+                    <div class="space-y-3 mt-6">
+                        <div class="bg-blue-50 p-3 rounded-lg">
+                            <p class="text-blue-800 font-medium">Pagamento em 3x sem juros:</p>
+                            <p class="text-blue-900 text-xl font-bold">R$ 460,00</p>
+                        </div>
+                        <div class="bg-green-50 p-3 rounded-lg">
+                            <p class="text-green-800 font-medium">Pagamento via PIX ou Dinheiro:</p>
+                            <p class="text-green-900 text-xl font-bold">R$ 430,00</p>
+                            <p class="text-green-700 text-xs mt-1">Economize R$ 30,00</p>
+                        </div>
+                    </div>
+                    
+                    <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        Comprar Agora
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Features Section -->
+    <section class="dark-section text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-tech">Por que escolher nossos <span class="text-cyan-400">produtos</span>?</h2>
+                <p class="text-gray-400 mt-2">Conheça os diferenciais dos nossos estabilizadores e nobreaks</p>
+                <div class="w-24 h-1 bg-cyan-400 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <div class="bg-cyan-900 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <svg class="w-8 h-8 text-cyan-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Proteção Avançada</h3>
+                    <p class="text-gray-400 text-center">Proteção contra surtos, picos de energia e quedas de tensão, garantindo a segurança dos seus equipamentos.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <div class="bg-cyan-900 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <svg class="w-8 h-8 text-cyan-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Autonomia Estendida</h3>
+                    <p class="text-gray-400 text-center">Nossos nobreaks oferecem tempo de autonomia superior, permitindo que você salve seu trabalho e desligue os equipamentos com segurança.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <div class="bg-cyan-900 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <svg class="w-8 h-8 text-cyan-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                            <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Eficiência Energética</h3>
+                    <p class="text-gray-400 text-center">Produtos desenvolvidos com tecnologia de ponta para garantir máxima eficiência energética e economia na conta de luz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Entre em <span class="logo-text">Contato</span></h2>
+            
+            <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8">
+                <!-- WhatsApp Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center max-w-xs w-full hover:shadow-xl transition-shadow duration-300">
+                    <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">WhatsApp</h3>
+                    <p class="text-gray-600 mb-4">(21) 97628-6027</p>
+                    <a href="https://wa.me/5521976286027" class="inline-flex items-center px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path>
+                            <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"></path>
+                        </svg>
+                        Enviar mensagem
+                    </a>
+                </div>
+
+                <!-- Email Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center max-w-xs w-full hover:shadow-xl transition-shadow duration-300">
+                    <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <p class="text-gray-600 mb-4">tekin.formatica@hotmail.com</p>
+                    <a href="mailto:tekin.formatica@hotmail.com" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
+                        <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        Enviar e-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center">
+                <div class="flex items-center mb-6">
+                    <div class="bg-gray-800 p-2 rounded-lg mr-2">
+                        <svg class="w-8 h-8 tech-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3L4 7.5V16.5L12 21L20 16.5V7.5L12 3Z" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L12 21" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L4 7.5" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L20 7.5" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="tech-font text-xl font-bold tracking-wider">Tekin<span class="text-cyan-400">formática</span></h1>
+                        <p class="text-gray-500 text-xs">Soluções em Tecnologia da Informação</p>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-6 mb-6">
+                    <a href="index.html" class="text-gray-400 hover:text-cyan-400 transition duration-300">Início</a>
+                    <a href="servicos.html" class="text-gray-400 hover:text-cyan-400 transition duration-300">Serviços</a>
+                    <a href="produtos.html" class="text-gray-400 hover:text-cyan-400 transition duration-300">Produtos</a>
+                    <a href="contato.html" class="text-gray-400 hover:text-cyan-400 transition duration-300">Contato</a>
+                </div>
+                
+                <p class="text-gray-500 text-sm">© 2011 Tekinformática - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="fixed inset-0 bg-gray-900 bg-opacity-90 z-50 hidden" id="mobile-menu">
+        <div class="flex justify-end p-4">
+            <button id="close-menu" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full">
+            <a href="index.html" class="text-white text-xl py-3 hover:text-cyan-400 transition duration-300">Início</a>
+            <a href="servicos.html" class="text-white text-xl py-3 hover:text-cyan-400 transition duration-300">Serviços</a>
+            <a href="produtos.html" class="text-white text-xl py-3 hover:text-cyan-400 transition duration-300">Produtos</a>
+            <a href="contato.html" class="text-white text-xl py-3 hover:text-cyan-400 transition duration-300">Contato</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeButton = document.getElementById('close-menu');
+            
+            if (menuButton && mobileMenu && closeButton) {
+                menuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                
+                closeButton.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9445a2f7b4472446',t:'MTc0ODAxNDY2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

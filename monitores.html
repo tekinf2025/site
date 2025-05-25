@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos-Monitor</title>
+    <link rel="icon" href="https://i.imgur.com/mO9KyLc.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B63E5',
+                        secondary: '#00CCFF',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        tech: ['Orbitron', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .tech-gradient {
+            background: linear-gradient(90deg, #0a2540, #0062cc);
+        }
+        .logo-text {
+            background: linear-gradient(90deg, #0062cc, #00d2ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: linear-gradient(90deg, #0062cc, #00d2ff);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #0a2540, #0062cc);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #0062cc, #00d2ff);
+            transform: translateY(-2px);
+        }
+        .tech-icon path {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: dash 2s linear forwards;
+        }
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        .card-gradient {
+            background: linear-gradient(135deg, #0a2540 0%, #1e3a5f 100%);
+        }
+        .cyan-glow {
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+        }
+        .dark-section {
+            background-color: #1a202c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="bg-gray-800 p-2 rounded-lg mr-2">
+                        <svg class="w-10 h-10 tech-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3L4 7.5V16.5L12 21L20 16.5V7.5L12 3Z" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L4 7.5" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12V21" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L20 7.5" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="tech-font text-2xl font-bold tracking-wider">
+                            <span class="text-white">Tekin</span><span class="text-cyan-400">formática</span>
+                        </h1>
+                        <p class="text-gray-500 text-sm">Soluções em Tecnologia da Informação</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-cyan-400 transition-colors">Início</a>
+                    <a href="servicos.html" class="nav-link text-white hover:text-cyan-400 transition-colors">Serviços</a>
+                    <a href="produtos.html" class="nav-link text-white hover:text-cyan-400 transition-colors">Produtos</a>
+                    <a href="contato.html" class="nav-link text-white hover:text-cyan-400 transition-colors">Contato</a>
+                </nav>
+                <button class="md:hidden text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="md:hidden bg-gray-900 hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="index.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded-md">Início</a>
+            <a href="servicos.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded-md">Serviços</a>
+            <a href="produtos.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded-md">Produtos</a>
+            <a href="contato.html" class="block px-3 py-2 text-white hover:bg-gray-700 rounded-md">Contato</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="tech-gradient text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-tech font-bold mb-4">Monitores em Destaque</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto">Descubra nossa seleção premium de monitores com a melhor tecnologia e preços imbatíveis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Monitor Card 1 -->
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://i.imgur.com/9X6Fgfa.png" alt="Monitor Aitek 19 LED" class="w-full h-64 object-contain bg-gray-100 p-4">
+                        <div class="absolute top-4 right-4 bg-cyan-500 text-white text-sm font-bold px-3 py-1 rounded-full">Destaque</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-tech font-bold text-gray-800">Monitor Aitek 19 LED</h3>
+                        <p class="text-gray-600 mb-4">60HZ, HDMI, VGA</p>
+                        
+                        <div class="bg-gray-100 p-4 rounded-lg mb-6">
+                            <h4 class="font-semibold text-gray-800 mb-2">Especificações:</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Resolução: 1920x1080p
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Frequência: 60Hz
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Interface: 1x VGA, 1x HDMI
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Dimensões: 43x29x4cm
+                                </li>
+                            </ul>
+                            <p class="mt-3 text-sm text-gray-600">Conteúdo da embalagem: 1x cabo de energia, 1x cabo HDMI, 1x manual do usuário</p>
+                        </div>
+                        
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 space-y-4 md:space-y-0">
+                            <div>
+                                <p class="text-gray-600">Pagamento em 3x sem juros</p>
+                                <p class="text-3xl font-bold text-gray-800">R$ 480,00</p>
+                            </div>
+                            <a href="https://wa.me/5521976286027" class="btn-primary text-white font-bold py-2 px-6 rounded-full">
+                                Comprar
+                            </a>
+                        </div>
+                        
+                        <div class="border-t pt-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-gray-600">Pagamento via PIX ou Dinheiro</p>
+                                    <p class="text-2xl font-bold text-green-600">R$ 460,00</p>
+                                </div>
+                                <a href="https://wa.me/5521976286027" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Monitor Card 2 -->
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://i.imgur.com/VyHEn2A.png" alt="Monitor Vxpro 21,5 LED" class="w-full h-64 object-contain bg-gray-100 p-4">
+                        <div class="absolute top-4 right-4 bg-cyan-500 text-white text-sm font-bold px-3 py-1 rounded-full">Destaque</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-tech font-bold text-gray-800">Monitor Vxpro 21,5 LED</h3>
+                        <p class="text-gray-600 mb-4">60HZ, HDMI, VGA</p>
+                        
+                        <div class="bg-gray-100 p-4 rounded-lg mb-6">
+                            <h4 class="font-semibold text-gray-800 mb-2">Especificações:</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Resolução: 1440 x 900p
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Frequência: 75Hz
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Interface: 1x VGA, 1x HDMI
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Dimensões: 49x29x3.6cm
+                                </li>
+                            </ul>
+                            <p class="mt-3 text-sm text-gray-600">Conteúdo da embalagem: 1x cabo de energia, 1x cabo HDMI, 1x manual do usuário</p>
+                        </div>
+                        
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 space-y-4 md:space-y-0">
+                            <div>
+                                <p class="text-gray-600">Pagamento em 3x sem juros</p>
+                                <p class="text-3xl font-bold text-gray-800">R$ 640,00</p>
+                            </div>
+                            <a href="https://wa.me/5521976286027" class="btn-primary text-white font-bold py-2 px-6 rounded-full">
+                                Comprar
+                            </a>
+                        </div>
+                        
+                        <div class="border-t pt-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-gray-600">Pagamento via PIX ou Dinheiro</p>
+                                    <p class="text-2xl font-bold text-green-600">R$ 610,00</p>
+                                </div>
+                                <a href="https://wa.me/5521976286027" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 tech-gradient">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-tech font-bold text-white mb-4">Precisa de ajuda para escolher?</h2>
+            <p class="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">Nossa equipe de especialistas está pronta para ajudar você a encontrar o monitor perfeito para suas necessidades.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Entre em <span class="logo-text">Contato</span></h2>
+            
+            <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8">
+                <!-- WhatsApp Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center max-w-xs w-full hover:shadow-xl transition-shadow duration-300">
+                    <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">WhatsApp</h3>
+                    <p class="text-gray-600 mb-4">(21) 97628-6027</p>
+                    <a href="https://wa.me/5521976286027" class="inline-flex items-center px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path>
+                            <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"></path>
+                        </svg>
+                        Enviar mensagem
+                    </a>
+                </div>
+
+                <!-- Email Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center max-w-xs w-full hover:shadow-xl transition-shadow duration-300">
+                    <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <p class="text-gray-600 mb-4">tekin.formatica@hotmail.com</p>
+                    <a href="mailto:tekin.formatica@hotmail.com" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
+                        <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        Enviar e-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center">
+                <div class="flex items-center mb-6">
+                    <div class="bg-gray-800 p-2 rounded-lg mr-2">
+                        <svg class="w-8 h-8 tech-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3L4 7.5V16.5L12 21L20 16.5V7.5L12 3Z" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L12 21" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L4 7.5" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L20 7.5" stroke="#00CCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="tech-font text-xl font-bold tracking-wider">Tekin<span class="text-cyan-400">formática</span></h1>
+                        <p class="text-gray-500 text-xs">Soluções em Tecnologia da Informação</p>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-6 mb-6">
+                    <a href="index.html" class="text-gray-400 hover:text-cyan-400 transition duration-300">Início</a>
+                    <a href="servicos.html" class="text-gray-400 hover:text-cyan-400 transition duration-300">Serviços</a>
+                    <a href="produtos.html" class="text-gray-400 hover:text-cyan-400 transition duration-300">Produtos</a>
+                    <a href="contato.html" class="text-gray-400 hover:text-cyan-400 transition duration-300">Contato</a>
+                </div>
+                
+                <p class="text-gray-500 text-sm">© 2011 Tekinformática - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="fixed inset-0 bg-gray-900 bg-opacity-90 z-50 hidden" id="mobile-menu">
+        <div class="flex justify-end p-4">
+            <button id="close-menu" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full">
+            <a href="index.html" class="text-white text-xl py-3 hover:text-cyan-400 transition duration-300">Início</a>
+            <a href="servicos.html" class="text-white text-xl py-3 hover:text-cyan-400 transition duration-300">Serviços</a>
+            <a href="produtos.html" class="text-white text-xl py-3 hover:text-cyan-400 transition duration-300">Produtos</a>
+            <a href="contato.html" class="text-white text-xl py-3 hover:text-cyan-400 transition duration-300">Contato</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeButton = document.getElementById('close-menu');
+            
+            if (menuButton && mobileMenu && closeButton) {
+                menuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                
+                closeButton.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9445a2f7b4472446',t:'MTc0ODAxNDY2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
