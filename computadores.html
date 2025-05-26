@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -203,559 +202,432 @@
         </div>
     </section>
 
-    <!-- Service Cards Section -->
-    <section class="py-16 bg-white">
+    <!-- Service Cards Section 1-3 -->
+    <section class="py-16 bg-blue-100">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Computadores em Destaque</h2>
             <div class="w-24 h-1 bg-cyan-500 mx-auto mb-12"></div>
-    
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-               <!-- Produto 1 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/DbruXBm.png" alt="Computador 01" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 01</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Padrão</li>
-                        <li><span class="font-medium">Fonte:</span> 230w</li>
-                        <li><span class="font-medium">Placa mãe:</span> 1155</li>
-                        <li><span class="font-medium">Processador:</span> Intel Core i5-3570 Quad Core</li>
-                        <li><span class="font-medium">Memória:</span> 8GB</li>
-                        <li><span class="font-medium">Armazenamento:</span> SSD 120GB</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 950,00</p>
+        <div class="flex flex-wrap justify-center gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/DbruXBm.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">01. Intel Core I5-3570</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 8GB</p>
+                        <p class="text-gray-600">SSD de 120GB</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 1.140,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 190,00</span>
                         </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 190,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 102,92</p>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 950,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 190,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 102,92 cada</p>
                         </div>
                     </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/mQbA0NG.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">02. Intel Core I5-3570</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 16GB</p>
+                        <p class="text-gray-600">SSD de 240GB</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 1.440,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 210,00</span>
+                        </div>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 1.230,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 240,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 130,92 cada</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/4JPkHOz.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">03. Intel Core I3-7100 Quad Core</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 16GB</p>
+                        <p class="text-gray-600">SSD de 480GB</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 1.890,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 290,00</span>
+                        </div>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 1.600,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 315,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 171,67 cada</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
                 </div>
             </div>
             
-            <!-- Produto 2 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/mQbA0NG.png" alt="Computador 02" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 02</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Padrão</li>
-                        <li><span class="font-medium">Fonte:</span> 500w</li>
-                        <li><span class="font-medium">Placa mãe:</span> 1155</li>
-                        <li><span class="font-medium">Processador:</span> Intel Core i5-3570 Quad Core</li>
-                        <li><span class="font-medium">Memória:</span> 16GB</li>
-                        <li><span class="font-medium">Armazenamento:</span> SSD 256GB</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 1.230,00</p>
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/AYAxXsV.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">04. Intel Core I5-8400 Octa Core</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 8GB</p>
+                        <p class="text-gray-600">SSD de 240GB</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 2.520,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 410,00</span>
                         </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 240,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 130,92</p>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 2.100,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 420,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 227,50 cada</p>
                         </div>
                     </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/ltzZ2ST.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">05. AMD Ryzen 3 Octa Core</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 16GB</p>
+                        <p class="text-gray-600">NVME de 480GB</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 2.580,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 430,00</span>
+                        </div>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 2.150,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 430,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 232,92 cada</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/1nXjD1Q.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">06. Intel Core I5-8400 Octa Core</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 16GB</p>
+                        <p class="text-gray-600">NVME 1TB + RTX 550 de 4GB</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 3.240,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 540,00</span>
+                        </div>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 2.700,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 540,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 292,50 cada</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
                 </div>
             </div>
             
-            <!-- Produto 3 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/4JPkHOz.png" alt="Computador 03" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 03</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Gamer</li>
-                        <li><span class="font-medium">Fonte:</span> 500w</li>
-                        <li><span class="font-medium">Placa mãe:</span> 1151</li>
-                        <li><span class="font-medium">Processador:</span> Intel Core I3-7100 Quad Core</li>
-                        <li><span class="font-medium">Memória:</span> 16GB DDR4</li>
-                        <li><span class="font-medium">Armazenamento:</span> SSD 480GB</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 1.600,00</p>
+            <!-- Card 7 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/JQXLT2R.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">07. AMD Ryzen 3 Octa Core</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 8GB</p>
+                        <p class="text-gray-600">SSD de 120GB</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 3.300,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 550,00</span>
                         </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 315,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 171,67</p>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 2.750,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 550,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 297,92 cada</p>
                         </div>
                     </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/t7apiPp.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">08. Intel Core I5-3570 Quad Core</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 8GB + SSD 120GB</p>
+                        <p class="text-gray-600">Monitor 19", Estabilizador, Teclado....</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 2.088,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 348,00</span>
+                        </div>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 1.740,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 348,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 188,50 cada</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/KjhYlH0.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">09. Intel Core I5-3570 Quad Core</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 8GB + SSD 240GB</p>
+                        <p class="text-gray-600">Monitor 21.5", Estabilizador, Teclado....</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 2.436,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 406,00</span>
+                        </div>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 2.030,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 406,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 219,92 cada</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card 10 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/r11TCIP.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">10. Intel Core I5-8400 Octa Core</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 8GB + SSD 256GB</p>
+                        <p class="text-gray-600">Monitor 19", Estabilizador, Teclado....</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 3.000,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 500,00</span>
+                        </div>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 2.500,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 500,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 270,83 cada</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/10UIBwt.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">11. AMD Ryzen 3 Octa Core</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 16GB + NVME 480GB</p>
+                        <p class="text-gray-600">Monitor 21.5", Estabilizador, Teclado....</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 3.480,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 580,00</span>
+                        </div>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 2.900,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 580,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 314,17 cada</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/rx8VBEq.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">12. Intel Core I5-8400 Octa Core</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 16GB + NVME 1TB + RX 550 4GB</p>
+                        <p class="text-gray-600">Monitor 21.5", Estabilizador, Teclado....</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 3.960,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 660,00</span>
+                        </div>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 3.300,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 660,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 357,50 cada</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
+                </div>
+            </div>
+           
+            <!-- Card 13 -->
+            <div class="bg-white rounded-lg overflow-hidden card-shadow w-full max-w-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="https://i.imgur.com/8S8xm3e.png" alt="PC. Intel Core I5" class="w-[300px] h-[205px] object-contain mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">13. AMD Ryzen 3 Octa Core</h3>
+                    <div class="flex flex-col items-center mt-2 space-y-1">
+                        <p class="text-gray-600">Memória RAM 16GB + NVME 1TB + RX 550 4GB</p>
+                        <p class="text-gray-600">Monitor 21.5", Estabilizador, Teclado....</p>
+                    </div>
+                    <div class="mt-4 flex flex-col items-center">
+                        <div class="flex items-center">
+                            <p class="text-gray-500 line-through">De: R$ 4.260,00</p>
+                            <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Economize R$ 710,00</span>
+                        </div>
+                        <p class="text-2xl font-bold text-blue-700 mt-2">R$ 3.550,00</p>
+                        <p class="text-sm text-gray-600">Dinheiro ou PIX</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-gray-700">6x de R$ 710,00 cada</p>
+                            <p class="text-gray-700">12x de R$ 384,58 cada</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5521976286027" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full btn-primary flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Comprar
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
-
-
-    <!-- Products Section -->
-    <section id="produtos" class="py-16 container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Produto 4 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/AYAxXsV.png" alt="Computador 04" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 04</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Gamer</li>
-                        <li><span class="font-medium">Fonte:</span> 500w</li>
-                        <li><span class="font-medium">Placa mãe:</span> 1151</li>
-                        <li><span class="font-medium">Processador:</span> Intel Core i5-8400 Octa Core</li>
-                        <li><span class="font-medium">Memória:</span> 8GB</li>
-                        <li><span class="font-medium">Armazenamento:</span> SSD 256GB</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 2.100,00</p>
-                        </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 420,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 227,50</p>
-                        </div>
-                    </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
-                </div>
-            </div>
-            
-            <!-- Produto 5 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/ltzZ2ST.png" alt="Computador 05" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 05</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Gamer</li>
-                        <li><span class="font-medium">Fonte:</span> 500w</li>
-                        <li><span class="font-medium">Placa mãe:</span> AM4</li>
-                        <li><span class="font-medium">Processador:</span> AMD Ryzen 3 Octa Core</li>
-                        <li><span class="font-medium">Memória:</span> 16GB</li>
-                        <li><span class="font-medium">Armazenamento:</span> NVME 480GB</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 2.150,00</p>
-                        </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 430,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 232,92</p>
-                        </div>
-                    </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
-                </div>
-            </div>
-            
-            <!-- Produto 6 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/1nXjD1Q.png" alt="Computador 06" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 06</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Gamer</li>
-                        <li><span class="font-medium">Fonte:</span> 500w</li>
-                        <li><span class="font-medium">Placa mãe:</span> 1151</li>
-                        <li><span class="font-medium">Processador:</span> Intel Core I5-8400 Octa Core</li>
-                        <li><span class="font-medium">Memória:</span> 16GB DDR4</li>
-                        <li><span class="font-medium">Armazenamento:</span> NVME 1TB + RTX 550 de 4 Gigas</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 2.700,00</p>
-                        </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 540,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 292,50</p>
-                        </div>
-                    </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- Products Section -->
-    <section id="produtos" class="py-16 container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Produto 7 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/JQXLT2R.png" alt="Computador 07" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 07</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Gamer</li>
-                        <li><span class="font-medium">Fonte:</span> 500w</li>
-                        <li><span class="font-medium">Placa mãe:</span> AM4</li>
-                        <li><span class="font-medium">Processador:</span> AMD Ryzen 3 Octa Core</li>
-                        <li><span class="font-medium">Memória:</span> 16GB</li>
-                        <li><span class="font-medium">Armazenamento:</span> NVME 1TB</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 2.750,00</p>
-                        </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 550,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 297,92</p>
-                        </div>
-                    </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
-                </div>
-            </div>
-            
-            <!-- Produto 8 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/t7apiPp.png" alt="Computador 08" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 08</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Padrão</li>
-                        <li><span class="font-medium">Fonte:</span> 230w</li>
-                        <li><span class="font-medium">Placa mãe:</span> 1155</li>
-                        <li><span class="font-medium">Processador:</span> Intel Core i5-3570 Quad Core</li>
-                        <li><span class="font-medium">Memória:</span> 8GB + SSD 120GB</li>
-                        <li><span class="font-medium">Com:</span> Monitor 19", Estabilizador, Teclado....</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 1.740,00</p>
-                        </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 348,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 188,50</p>
-                        </div>
-                    </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
-                </div>
-            </div>
-            
-            <!-- Produto 9 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/KjhYlH0.png" alt="Computador 09" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 09</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Gamer</li>
-                        <li><span class="font-medium">Fonte:</span> 500w</li>
-                        <li><span class="font-medium">Placa mãe:</span> 1155</li>
-                        <li><span class="font-medium">Processador:</span> Intel Core i5-3570 Quad Core</li>
-                        <li><span class="font-medium">Memória:</span> 8GB + SSD 240GB</li>
-                        <li><span class="font-medium">Com:</span> Monitor 21.5", Estabilizador, Teclado....</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 2.030,00</p>
-                        </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 406,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 219,92</p>
-                        </div>
-                    </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
-                </div>
-            </div>
-        </div>
-    </section>
-	
-	
-	
-	
-	    <!-- Products Section -->
-    <section id="produtos" class="py-16 container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Produto 10 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/r11TCIP.png" alt="Computador 10" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 10</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Gamer</li>
-                        <li><span class="font-medium">Fonte:</span> 500w</li>
-                        <li><span class="font-medium">Placa mãe:</span> 1151</li>
-                        <li><span class="font-medium">Processador:</span> Intel Core i5-8400 Octa Core</li>
-                        <li><span class="font-medium">Memória:</span> 8GB + SSD 256GB</li>
-                        <li><span class="font-medium">Com:</span> Monitor 19", Estabilizador, Teclado....</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 2.500,00</p>
-                        </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 500,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 270,83</p>
-                        </div>
-                    </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
-                </div>
-            </div>
-            
-            <!-- Produto 11 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/10UIBwt.png" alt="Computador 11" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 11</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Gamer</li>
-                        <li><span class="font-medium">Fonte:</span> 500w</li>
-                        <li><span class="font-medium">Placa mãe:</span> AM4</li>
-                        <li><span class="font-medium">Processador:</span> AMD Ryzen 3 Octa Core</li>
-                        <li><span class="font-medium">Memória:</span> 16GB + NVME 480GB</li>
-                        <li><span class="font-medium">Com:</span> Monitor 21.5", Estabilizador, Teclado....</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 2.900,00</p>
-                        </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 580,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 314,17</p>
-                        </div>
-                    </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
-                </div>
-            </div>
-            
-            <!-- Produto 12 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/rx8VBEq.png" alt="Computador 12" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 12</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Gamer</li>
-                        <li><span class="font-medium">Fonte:</span> 500w</li>
-                        <li><span class="font-medium">Placa mãe:</span> 1151</li>
-                        <li><span class="font-medium">Processador:</span> Intel Core i5-8400 Octa Core</li>
-                        <li><span class="font-medium">Memória:</span> 16GB + NVME 1TB + RX 550 4 Gigas</li>
-                        <li><span class="font-medium">Com:</span> Monitor 21.5", Estabilizador, Teclado....</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 3.300,00</p>
-                        </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 660,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 357,50</p>
-                        </div>
-                    </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
-                </div>
-            </div>
-        </div>
-    </section>
-	
-	
-
-
-	    <!-- Products Section -->
-    <section id="produtos" class="py-16 container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Produto 13 -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-                <div class="p-4 bg-gray-100">
-                    <img src="https://i.imgur.com/8S8xm3e.png" alt="Computador 13" class="w-full h-64 object-contain">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Computador: 13</h3>
-                    <ul class="text-gray-600 mb-6 space-y-1">
-                        <li><span class="font-medium">Gabinete:</span> Gamer</li>
-                        <li><span class="font-medium">Fonte:</span> 500w</li>
-                        <li><span class="font-medium">Placa mãe:</span> AM4</li>
-                        <li><span class="font-medium">Processador:</span> AMD Ryzen 3 Octa Core</li>
-                        <li><span class="font-medium">Memória:</span> 16GB + NVME 1TB + RX 550 4 Gigas</li>
-                        <li><span class="font-medium">Com:</span> Monitor 21.5", Estabilizador, Teclado....</li>
-                    </ul>
-                    
-                    <div class="space-y-3">
-                        <div class="payment-option bg-green-50 p-3 rounded-lg border border-green-200">
-                            <p class="text-green-700 font-semibold">Dinheiro ou Pix</p>
-                            <p class="text-2xl font-bold text-green-600">R$ 3.550,00</p>
-                        </div>
-                        <div class="payment-option bg-blue-50 p-3 rounded-lg border border-blue-200">
-                            <p class="text-blue-700 font-semibold">6x de</p>
-                            <p class="text-xl font-bold text-blue-600">R$ 710,00</p>
-                        </div>
-                        <div class="payment-option bg-indigo-50 p-3 rounded-lg border border-indigo-200">
-                            <p class="text-indigo-700 font-semibold">12x de</p>
-                            <p class="text-xl font-bold text-indigo-600">R$ 384,58</p>
-                        </div>
-                    </div>
-                    
-                    <button class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Comprar Agora</button>
-                </div>
-            </div>
-        </div>            
-   </section>
-
-    <!-- Call to Action -->
-    <section class="card-gradient text-white py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-tech font-bold mb-6">Precisa de ajuda para escolher?</h2>
-            <p class="text-lg mb-8 max-w-2xl mx-auto">Nossa equipe de especialistas está pronta para ajudar você a encontrar o computador ideal para suas necessidades.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Info Section -->
-    <section class="py-12 bg-white">
+    <!-- Contact Section -->
+    <section class="bg-blue-100 text-white py-12">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-10">Entre em <span class="logo-text">Contato</span></h2>
-            
-            <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8">
-                <!-- WhatsApp Card -->
-                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center max-w-xs w-full hover:shadow-xl transition-shadow duration-300">
-                    <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <a href="https://wa.me/5521976286027" class="flex items-center bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                     </svg>
-                    <h3 class="text-xl font-semibold mb-2">WhatsApp</h3>
-                    <p class="text-gray-600 mb-4">(21) 97628-6027</p>
-                    <a href="https://wa.me/5521976286027" class="inline-flex items-center px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300">
-                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path>
-                            <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"></path>
-                        </svg>
-                        Enviar mensagem
-                    </a>
-                </div>
-
-                <!-- Email Card -->
-                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center max-w-xs w-full hover:shadow-xl transition-shadow duration-300">
-                    <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    <div>
+                        <p class="font-medium">WhatsApp</p>
+                        <p class="text-sm">(21) 97628-6027</p>
+                    </div>
+                </a>
+                <a href="mailto:tekin.formatica@hotmail.com" class="flex items-center bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <h3 class="text-xl font-semibold mb-2">Email</h3>
-                    <p class="text-gray-600 mb-4">tekin.formatica@hotmail.com</p>
-                    <a href="mailto:tekin.formatica@hotmail.com" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
-                        <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                        </svg>
-                        Enviar e-mail
-                    </a>
-                </div>
+                    <div>
+                        <p class="font-medium">Email</p>
+                        <p class="text-sm">Tekinformatica</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-blue-100">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Depoimentos</h2>
             <p class="text-center text-gray-600 mb-12">O que nossos clientes dizem sobre nós</p>
@@ -789,8 +661,7 @@
                         </div>
                     </div>
                     <p class="text-gray-600">
-                        "Excelente atendimento! Meu computador estava muito lento e o Ricardo me indicou um PC dentro do meu orçamento. 
-                        Fez o backup de todos os meus arquivos do PC velho agora está funcionando perfeitamente. Recomendo a todos!"
+                        "Excelente atendimento! Meu PC estava lento e o Ricardo me indicou um PC dentro do meu orçamento."
                     </p>
                 </div>
 
@@ -822,8 +693,7 @@
                         </div>
                     </div>
                     <p class="text-gray-600">
-                        "Comprei um PC de entrada para estudar e fiquei impressionada com a qualidade do produto e do atendimento. 
-                        O Ricardo explicou detalhadamente como usar e configurou tudo para mim."
+                        "Comprei um PC de entrada para estudar e fiquei impressionada com a qualidade do produto e do atendimento."
                     </p>
                 </div>
 
@@ -855,8 +725,7 @@
                         </div>
                     </div>
                     <p class="text-gray-600">
-                        "Comprei meu PC gamer na Tekinformática e gostei muito, estou satisfeita! Tive ajuda para escolher 
-                        o computador dentro do meu orçamento e o resultado foi incrível."
+                        "Comprei meu PC gamer na Tekinformática e gostei muito, estou satisfeita! O resultado foi incrível."
                     </p>
                 </div>
             </div>
