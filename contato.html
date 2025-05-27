@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="icon" href="https://i.imgur.com/mO9KyLc.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.imgur.com/DSsx8ER.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f0f4f8;
@@ -41,112 +44,46 @@
             transition: width 0.3s ease;
         }
         
-        .nav-link:hover::after {
+        .active::after {
             width: 100%;
         }
         
-        .product-card {
+        .form-input:focus {
+            border-color: #0ea5e9;
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+        }
+        
+        .btn-submit {
+            background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
             transition: all 0.3s ease;
         }
         
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .btn-primary {
-            background: linear-gradient(90deg, #0a2540, #0062cc);
-            transition: all 0.3s ease;
-        }
-        
-        .btn-primary:hover {
-            background: linear-gradient(90deg, #0062cc, #00d2ff);
+        .btn-submit:hover {
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
         }
         
-        @keyframes dash {
-            to {
-                stroke-dashoffset: 0;
-            }
+        .loader {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid white;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
         }
         
-        .tech-icon path {
-            stroke-dasharray: 100;
-            stroke-dashoffset: 100;
-            animation: dash 2s linear forwards;
-        }
-        
-        .card-gradient {
-            background: linear-gradient(135deg, #0a2540 0%, #1e3a5f 100%);
-        }
-        
-        .cyan-glow {
-            box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
-        }
-        
-        .dark-section {
-            background-color: #1a202c;
-        }
-        
-        .tech-font {
-            font-family: 'Orbitron', sans-serif;
-        }
-        
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 3px;
-            background: linear-gradient(90deg, #0062cc, #00d2ff);
-            margin: 12px auto 0;
-        }
-        
-        /* Controle de imagens */
-        .product-image-container {
-            height: 200px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f8f9fa;
-        }
-        
-        .product-image {
-            max-width: 80%;
-            max-height: 80%;
-            object-fit: contain;
-            transition: transform 0.3s ease;
-        }
-        
-        .product-card:hover .product-image {
-            transform: scale(1.05);
-        }
-        
-        /* Controle para imagem do hero */
-        .hero-image-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 100%;
-        }
-        
-        .hero-image {
-            max-width: 80%;
-            max-height: 350px;
-            object-fit: contain;
-        }
-        
-        /* Limitar largura máxima em telas grandes */
-        @media (min-width: 1400px) {
-            .container {
-                max-width: 1320px;
-            }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
     <!-- Header -->
-    <header class="tech-gradient shadow-lg">
+    <header class="tech-gradient py-3 px-4">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2">
@@ -176,15 +113,14 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="tech-gradient py-16">
+    <section class="tech-gradient py-8">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 text-white mb-8 md:mb-0">
                     <h2 class="text-4xl md:text-5xl font-bold mb-4 tech-font">Tecnologia de Ponta para Você</h2>
-                    <p class="text-lg mb-6">Estamos prontos para atender suas necessidades em tecnologia da informação.</p>
+                    <p class="text-lg mb-6">Descubra as melhores soluções em informática para seu negócio ou uso pessoal. Produtos de alta qualidade com preços competitivos.</p>
                     <div class="flex space-x-4">
-                        <a href="produtos.html" class="btn-primary text-white px-6 py-3 rounded-lg font-medium">Ver Produtos</a>
-                        <a href="contato.html" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-900 transition duration-300">Fale Conosco</a>
+                        <a href="produtos.html" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-900 transition duration-300">Ver Produtos</a>
                     </div>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
@@ -202,32 +138,53 @@
         </div>
     </section>
 
-    <!-- Service Cards Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Deixe a sua mensagem</h2>
-            <div class="w-24 h-1 bg-cyan-500 mx-auto mb-12"></div>
-
     <!-- Contact Form Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-white rounded-xl shadow-xl form-container overflow-hidden">
-                    
-                    <div class="p-8">
-                        <div class="responsive-iframe-container">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFfWsdkhlHEoaJO-2c2Gaa8a-CFOP_SUmO0WGYvbpxN6h0mw/viewform?embedded=true" width="100%" height="840" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg">Carregando…</iframe>
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-2xl">
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <div class="tech-gradient py-6 px-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-white text-center">Entre em Contato</h2>
+                    <p class="text-blue-100 text-center mt-2">Estamos prontos para atender suas necessidades</p>
+                </div>
+                
+                <div class="p-6 md:p-8">
+                    <form id="contactForm" class="space-y-6 max-w-md mx-auto">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome Completo*</label>
+                            <input type="text" id="name" name="name" required 
+                                class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none transition-all"
+                                placeholder="Digite seu nome completo">
                         </div>
-                    </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefone / WhatsApp*</label>
+                            <input type="tel" id="phone" name="phone" required 
+                                class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none transition-all"
+                                placeholder="(00) 00000-0000">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensagem*</label>
+                            <textarea id="message" name="message" rows="5" required 
+                                class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none transition-all resize-none"
+                                placeholder="Digite sua mensagem aqui..."></textarea>
+                        </div>
+                        
+                        <div class="pt-2">
+                            <button type="submit" id="submitBtn" class="btn-submit w-full py-3 px-6 text-white font-medium rounded-lg focus:outline-none">
+                                Enviar Mensagem
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
-    
 
-    
-    
+
+
 
 
     <!-- Footer -->
@@ -329,30 +286,107 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
+    
     <script>
-        // Mobile menu functionality
-        const menuButton = document.querySelector('button.md\\:hidden');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const closeMenu = document.getElementById('closeMenu');
-        
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.remove('translate-x-full');
-        });
-        
-        closeMenu.addEventListener('click', () => {
-            mobileMenu.classList.add('translate-x-full');
-        });
-        
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        document.addEventListener('DOMContentLoaded', function() {
+            // Phone mask
+            const phoneInput = document.getElementById('phone');
+            phoneInput.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length <= 11) {
+                    if (value.length > 2) {
+                        value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
+                    }
+                    if (value.length > 10) {
+                        value = `${value.substring(0, 10)}-${value.substring(10)}`;
+                    }
+                    e.target.value = value;
+                } else {
+                    e.target.value = value.substring(0, 15);
+                }
+            });
+
+            // Form submission
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            form.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const message = document.getElementById('message').value;
+                
+                if (!name || !phone || !message) {
+                    Swal.fire({
+                        title: 'Atenção!',
+                        text: 'Todos os campos são obrigatórios.',
+                        icon: 'warning',
+                        confirmButtonColor: '#3b82f6'
+                    });
+                    return;
+                }
+                
+                // Show loading state
+                const originalBtnText = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span class="loader"></span> Enviando...';
+                
+                // Google Apps Script Web App URL
+                // IMPORTANTE: Substitua esta URL pelo seu próprio Google Apps Script Web App URL
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbx0r_e-rp_8JM0jLxk5WqKNVMWsuQh9ATex_-lFuXmVUd8IVMB_9GyE5oWir24Zsi11/exec';
+                
+                // Prepare form data
+                const formData = new FormData();
+                formData.append('name', name);
+                formData.append('phone', phone);
+                formData.append('message', message);
+                formData.append('timestamp', new Date().toLocaleString());
+                
+                // Send data to Google Sheet via Google Apps Script
+                fetch(scriptURL, { method: 'POST', body: formData })
+                    .then(response => {
+                        if (response.ok) {
+                            return response.json();
+                        } else {
+                            throw new Error('Erro ao enviar o formulário');
+                        }
+                    })
+                    .then(data => {
+                        // Reset form after successful submission
+                        form.reset();
+                        
+                        Swal.fire({
+                            title: 'Sucesso!',
+                            text: 'Sua mensagem foi enviada com sucesso. Entraremos em contato em breve!',
+                            icon: 'success',
+                            confirmButtonColor: '#3b82f6'
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        
+                        Swal.fire({
+                            title: 'Erro!',
+                            text: 'Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.',
+                            icon: 'error',
+                            confirmButtonColor: '#3b82f6'
+                        });
+                    })
+                    .finally(() => {
+                        // Restore button state
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalBtnText;
+                    });
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'944e965ac596e2b5',t:'MTc0ODEwODUyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'946565db31aa648b',t:'MTc0ODM0NzcwOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
